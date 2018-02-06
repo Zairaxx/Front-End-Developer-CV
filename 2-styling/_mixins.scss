@@ -25,14 +25,27 @@ $mobile-width:360px;
 }
 
 .hero {
-  @include background-cover("../../../assets/img/hero/home-2000.jpg");
-  position: relative;
+  @include background-cover("img/ProjectTeam.jpg");
+  position:relative;
   text-align: center;
+  width:100vw;
+  height:50vh;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   h2 {
-    @include font-title;
+    @include font-header-title;
     line-height: 80px;
     position: relative;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 5rem;
+    &#job {
+      justify-content: flex-end;
+    }
 
   }
 
@@ -49,4 +62,13 @@ $mobile-width:360px;
       display: inline-block;
     }
   }
+}
+
+.hero-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 50, 0.4);
 }
