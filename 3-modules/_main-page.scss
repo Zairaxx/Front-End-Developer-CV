@@ -88,7 +88,7 @@ header {
   @include background-cover("img/ProjectTeam.jpg");
   position:relative;
   width:100vw;
-  height:70vh;
+  height:60vh;
   h2 {
     @include font-header-title;
     line-height: 80px;
