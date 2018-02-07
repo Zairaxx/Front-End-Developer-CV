@@ -16,7 +16,8 @@ header {
   max-width: 800px;
   padding:0rem 1rem;
   h2 {
-    @include font-title(4.6rem);
+    @include font-intro-title;
+    color:white;
   }
   @include mobile
   {
@@ -93,7 +94,7 @@ header {
 		padding:0 0 1.5rem 0;
 		@include mobile {
 			padding:0 0 5rem 0;
-			
+
 		}
     }
 
@@ -153,6 +154,7 @@ header {
   }
   p {
     @include font-intro-para;
+    text-align: center;
   }
 }
 .about-me {
