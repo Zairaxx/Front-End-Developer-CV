@@ -18,3 +18,21 @@
   font-size:4rem;
   color:white;
 }
+
+@mixin font-intro-title {
+  font-size:7.2rem;
+  font-family: 'Oswald', sans-serif;
+  color: $color-orange;
+  text-align:center;
+  line-height:14.4rem;
+
+}
+
+@mixin font-intro-para {
+  font-size:3.6rem;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-align:center;
+  line-height:14.4rem;
+
+}
