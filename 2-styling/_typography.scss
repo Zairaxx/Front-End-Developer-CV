@@ -15,6 +15,41 @@
 
 @mixin font-header-title{
   font-family:"Exo", sans-serif;
-  font-size:5.6rem;
-  color:white;
+  font-size:4rem;
+	@include tablet {
+		font-size: 1.8rem;
+		
+	}
+	@include mobile {
+		font-size:2.4em;
+	}
+	@media (max-width:360px) {
+		font-size:0.8em;
+	}
+}
+
+@mixin font-intro-title {
+  font-size:7.2rem;
+  font-family: 'Oswald', sans-serif;
+  color: $color-orange;
+  text-align:center;
+  line-height:14.4rem;
+	@include mobile {
+		font-size:3.6rem;
+		line-height:7.2rem;
+	}
+
+}
+
+@mixin font-intro-para {
+  font-size:3.6rem;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-align:center;
+  line-height:14.4rem;
+	@include mobile {
+		font-size:1.8rem;
+		line-height:3.6rem;
+	}
+
 }
