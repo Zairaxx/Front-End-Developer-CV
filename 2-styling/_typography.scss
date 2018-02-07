@@ -16,7 +16,17 @@
 @mixin font-header-title{
   font-family:"Exo", sans-serif;
   font-size:4rem;
-  color:white;
+	padding:0;
+	@include tablet {
+		font-size: 1.8rem;
+		
+	}
+	@include mobile {
+		font-size:2.4em;
+	}
+	@media (max-width:360px) {
+		font-size:0.8em;
+	}
 }
 
 @mixin font-intro-title {
@@ -25,6 +35,10 @@
   color: $color-orange;
   text-align:center;
   line-height:14.4rem;
+	@include mobile {
+		font-size:3.6rem;
+		line-height:7.2rem;
+	}
 
 }
 
@@ -34,5 +48,9 @@
   color: white;
   text-align:center;
   line-height:14.4rem;
+	@include mobile {
+		font-size:1.8rem;
+		line-height:3.6rem;
+	}
 
 }

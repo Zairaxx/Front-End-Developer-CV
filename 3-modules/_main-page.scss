@@ -49,17 +49,25 @@ header {
   display: flex;
   flex-direction: row;
   justify-content:center;
-  align-items: flex-end;
+  align-items: flex-end;;
   height:100%;
   box-sizing: border-box;
-  padding-bottom: 1%;
+  padding-bottom: 0%;
   flex-wrap: nowrap;
 
   .hero-author {
     box-sizing: border-box;
     padding-bottom: 140px;
+	  @include mobile{
+		  padding-bottom:11.5rem;
+	  }
     h2.author {
       font-size:48px;
+		@include mobile {
+			font-size:1.6rem;
+			line-height:3.2rem;
+			width:100%;
+		}
     }
   }
 
@@ -76,9 +84,17 @@ header {
       box-sizing: border-box;
       padding-bottom: 80px;
       color:$color-orange;
+		@include mobile {
+			font-size:7.2rem;
+			width:2rem;
+		}
     }
     h2 {
-      padding-bottom: 20px;
+		padding:0 0 1.5rem 0;
+		@include mobile {
+			padding:0 0 5rem 0;
+			
+		}
     }
 
   }
@@ -88,7 +104,7 @@ header {
   @include background-cover("img/ProjectTeam.jpg");
   position:relative;
   width:100vw;
-  height:60vh;
+  height:70vh;
   h2 {
     @include font-header-title;
     line-height: 80px;
@@ -96,11 +112,15 @@ header {
     color:white;
     }
   .hero-wrapper{
+	@include font-header-title;
     margin: 0 auto;
     width: 100%;
     max-width: 1100px;
     color:$color-orange;
   }
+	@include mobile {
+		height:50vh;
+	}
 }
 
 .hero-bg{
