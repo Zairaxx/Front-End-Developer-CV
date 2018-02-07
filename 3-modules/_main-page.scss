@@ -139,6 +139,9 @@ header {
   width: 40%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
+	@include mobile {
+		width:65%
+	}
 }
 
 .intro {
@@ -165,13 +168,22 @@ header {
   min-height:100vh;
   background-position: top;
   .img-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include font-intro-para;
-    line-height: 12rem;
+	  display: flex;
+	  @include font-intro-para;
+	  line-height: 12rem;
+	  padding:5px;}
     ul {
       list-style: none;
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items:flex-start;
+		padding-left:0;
+		float:left;
     }
   }
+
+.orange-color {
+	color:$color-orange;
+	float:left;
 }
