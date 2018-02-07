@@ -9,7 +9,6 @@
   font-size:$font-size;
   line-height: #{$font-size * 2};
   @include mobile {
-  font-size: #{$font-size / 2}
   }
 }
 
@@ -24,7 +23,7 @@
 	@include mobile {
 		font-size:2.4em;
 	}
-	@media (max-width:360px) {
+	@media (max-width:355px) {
 		font-size:0.8em;
 	}
 }
