@@ -9,11 +9,11 @@
   font-size:$font-size;
   line-height: #{$font-size * 2};
   @include mobile {
-    font-size: #{$font-size / 2}
+  font-size: #{$font-size / 2}
   }
 }
 
-@mixin font-header-title{
+@mixin font-header-title {
   font-family:"Exo", sans-serif;
   font-size:4rem;
 	padding:0;
@@ -48,6 +48,10 @@
   color: white;
   text-align:center;
   line-height:14.4rem;
+	@include tablet {
+		font-size:1.8rem;
+		line-height:3.6rem;
+	}
 	@include mobile {
 		font-size:1.8rem;
 		line-height:3.6rem;

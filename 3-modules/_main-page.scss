@@ -169,9 +169,13 @@ header {
     justify-content: center;
     align-items: center;
     @include font-intro-para;
-    line-height: 12rem;
+	  line-height: 12rem;}
     ul {
       list-style: none;
     }
   }
+
+.orange-color {
+	color:$color-orange;
+	float:left;
 }
