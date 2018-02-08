@@ -11,7 +11,7 @@
     $desktop-width: 1024px;
     $mobile-width:360px;
 
-// Mixins
+// Media Queries
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {

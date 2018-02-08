@@ -74,7 +74,7 @@ header {
 			font-size:2.4rem;
 			line-height:3.6rem;
 			width:100%;
-			
+
 		}
 		@media (max-width:424px)
 		{
@@ -84,7 +84,7 @@ header {
 			font-size:0.8em;
 			text-transform: uppercase;
 			font-weight: 200;
-			
+
     }
   }
 	}
@@ -168,7 +168,7 @@ header {
 }
 
 .intro {
-  height:50vh;
+  height:75vh;
   width:100vw;
   background: rgba(50, 75, 150, 0.3);
   h3 {
@@ -193,21 +193,20 @@ header {
   background-position: top;
   .img-text {
 	  display: flex;
-	  @include font-intro-para;
-	  line-height: 12rem;
-	  padding:5px;}
+	  @include font-intro-para;}
     ul {
       list-style: none;
 		display:flex;
 		flex-direction:column;
 		justify-content: center;
-		align-items:flex-start;
-		padding-left:1rem;
-		float:left;
+    li {
+      padding-left:1rem;
+      padding-right:0;
+      padding-bottom:2rem;
+    }
     }
   }
 
 .orange-color {
 	color:$color-orange;
-	float:left;
 }
