@@ -16,7 +16,8 @@ header {
   max-width: 800px;
   padding:0rem 1rem;
   h2 {
-    @include font-title(4.6rem);
+    @include font-intro-title;
+    color:white;
   }
   @include mobile
   {
@@ -57,20 +58,36 @@ header {
 
   .hero-author {
     box-sizing: border-box;
-    padding-bottom: 140px;
+    padding-bottom: 14rem;
+	  @include tablet {
+		  padding-bottom:12rem;
+	  }
 	  @include mobile{
 		  padding-bottom:11.5rem;
 	  }
     h2.author {
-      font-size:48px;
-		@include mobile {
-			font-size:1.6rem;
-			line-height:3.2rem;
-			width:100%;
+      font-size:4.8rem;
+		@include tablet {
+			font-size:3.6rem;
 		}
+		@include mobile {
+			font-size:2.4rem;
+			line-height:3.6rem;
+			width:100%;
+
+		}
+		@media (max-width:424px)
+		{
+			font-size:1.7rem;
+		}
+		span {
+			font-size:0.8em;
+			text-transform: uppercase;
+			font-weight: 200;
+
     }
   }
-
+	}
   .hero-job {
     display:flex;
     flex-direction: row;
@@ -79,21 +96,27 @@ header {
     flex-wrap: nowrap;
 
     h2.vertical-line {
-      font-size:180px;
+      font-size:18rem;
       width:4rem;
       box-sizing: border-box;
-      padding-bottom: 80px;
+      padding-bottom: 7.5rem;
       color:$color-orange;
+		@include tablet {
+			font-size:14rem;
+		}
 		@include mobile {
 			font-size:7.2rem;
-			width:2rem;
+			width:1.5rem;
 		}
     }
     h2 {
 		padding:0 0 1.5rem 0;
+		@include tablet {
+			padding:0 0 2.5rem 0;
+		}
 		@include mobile {
 			padding:0 0 5rem 0;
-			
+
 		}
     }
 
@@ -145,7 +168,7 @@ header {
 }
 
 .intro {
-  height:50vh;
+  height:75vh;
   width:100vw;
   background: rgba(50, 75, 150, 0.3);
   h3 {
@@ -153,6 +176,7 @@ header {
   }
   p {
     @include font-intro-para;
+    text-align: center;
   }
 }
 .about-me {
@@ -169,21 +193,20 @@ header {
   background-position: top;
   .img-text {
 	  display: flex;
-	  @include font-intro-para;
-	  line-height: 12rem;
-	  padding:5px;}
+	  @include font-intro-para;}
     ul {
       list-style: none;
 		display:flex;
 		flex-direction:column;
 		justify-content: center;
-		align-items:flex-start;
-		padding-left:0;
-		float:left;
+    li {
+      padding-left:1rem;
+      padding-right:0;
+      padding-bottom:2rem;
+    }
     }
   }
 
 .orange-color {
 	color:$color-orange;
-	float:left;
 }
