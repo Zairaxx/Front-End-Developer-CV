@@ -231,7 +231,7 @@ header {
   height:50vh;
 }
 .about-me {
-  @include background-cover("/2-styling/img/Selfie.jpg");
+  @include background-cover("./img/Selfie.jpg");
   position:relative;
   width:auto;
   min-height:100vh;
